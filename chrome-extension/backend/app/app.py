@@ -8,7 +8,6 @@ CORS(app)
 @app.route('/responses', methods=['POST'])
 @cross_origin(allow_headers=['Content-Type'])
 def generate_emoreply():
-    # import pdb; pdb.set_trace()
     input = request.get_json()['input']
     emoreply = "I got this input: " + input
     return jsonify({'response': emoreply}), 200
