@@ -1,19 +1,16 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <script src="popup.js"></script>
-      <style>
-        button {
-          height: 30px;
-          width: 30px;
-          outline: none;
-        }
-      </style>
+      <script src='popup.js'></script>
+      <link rel='stylesheet' type='text/css' href='popup.css' />
     </head>
     <body>
-      <p>Enter your input below.</p>
-      <textarea id='inputField'>Default text</textarea>
-      <button id='submit'></button>
+      <div id='prompt-0'>
+        <p id='prompt-1'>Want a sad reply?</p>
+        <p id='prompt-2'>Enter your input below!</p>
+      </div>
+      <textarea id='inputField'></textarea>
+      <input type='image' src='images/Crying-Emoji.png' id='submit' alt='get emoresponse!'/>
       <div id='outputField'></div>
     </body>
   </html>

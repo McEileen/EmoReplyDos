@@ -10,11 +10,13 @@
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "720": "images/Sadface.jpg"
+            "128": "images/Sad-Face-128.png"
         }
     },
     "icons": {
-        "720": "images/Sadface.jpg"
+        "128": "images/Sad-Face-128.png",
+        "48": "images/Sad-Face-48.png",
+        "16": "images/Sad-Face-16.png"
     },
     "permissions": [
         "http://localhost:5000/responses"

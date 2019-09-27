@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+#prompt-0 {
+    text-align: center;
+    color: #FF69B4;
+}
+
+#prompt-1 {
+    font: italic 1.5em "Fira Sans", serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+#prompt-2 {
+    font: italic 1.5em "Fira Sans", serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+input#submit {
+    height: 30px;
+    width: 30px;
+    outline: none;
+    display:block;
+    margin: 10px auto;
+    width: 40px;
+    border: 0;
+}
+
+#outputField {
+    text-align: center;
+    font: italic 1.5em "Fira Sans", serif;
+    font-weight: bold;
+    color: #FF69B4;
+}
