@@ -27,6 +27,7 @@ def find_perks_response(model, input, train_corpus):
     tokenized_input = gensim.utils.simple_preprocess(input)
     inferred_vector = model.infer_vector(tokenized_input)
     most_sim_vector = model.docvecs.most_similar([inferred_vector], topn=len(model.docvecs))[0]
-    response_idx = most_sim_vector[0] + 1
+    response_idx = most_sim_vector[0]
     response = train_corpus[response_idx]
-    return response
+    reply = ' '.join(response.words).capitalize()
+    return reply

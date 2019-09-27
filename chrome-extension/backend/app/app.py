@@ -23,4 +23,4 @@ print("the model is ready!")
 def generate_emoreply():
     input = request.get_json()['input']
     emoreply = find_perks_response(trained_model, input, train_corpus)
-    return jsonify({'response': emoreply}), 200
+    return jsonify(emoreply), 200
