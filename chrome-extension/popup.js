@@ -7,7 +7,7 @@ function makeXhrPostRequest(targetUrl, requestBody) {
         xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
         xhr.onload = function() {
             if (xhr.status >= 200 && xhr.status < 300){
-                return resolve(xhr.response);
+                return resolve(xhr.response)
             } else {
                 reject(Error(JSON.stringify({
                     status: xhr.status,
@@ -23,7 +23,7 @@ function makeXhrPostRequest(targetUrl, requestBody) {
         }
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
-                document.getElementById('outputField').innerText = xhr.responseText;
+                document.getElementById('outputField').innerText = xhr.responseText
             }
         }
         xhr.send(JSON.stringify(requestBody))
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('response', data)
         })
         .catch(err => console.log('error', err))
-    });
+    })
 })
 
 
